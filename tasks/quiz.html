@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title >Quiz pentru masina ta</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src = "index.js" ></script>
+        <script src = "quiz1.js"></script>
+
+    </head>
+    <body>
+        <form name="varsta" class = "headerq">
+            Introdu-ti data nasterii sub forma ZZ#LL#AAAA  <input type="text" name="myDate" size=10 maxlength=10> 
+            <input type="button" value="Find Age" onclick="getAge()">
+            <h2 id = "locvarsta"></h2>
+        </form>
+        
+        <div class = "headerq">
+            <h1 id = "titlurev">Quiz masina potrivita</h1>
+            <h2>Bifeaza un singur raspuns la urmatoarele intrebari: </h2>
+
+        </div>
+        <div class = "bodyq">
+            <form name = "quiz" onSubmit="myfunc()">
+                <div class = "questions">
+                    <h1 id = "question1" >Cand vezi prima data o masina primul lucru care iti iese in evidenta este: </h1>
+                    <input type = "radio" name="q1" value= "a">a.Capacitatea motorului<br>
+                    <input type = "radio" name="q1" value= "b">b.Designul<br>
+                    <input type = "radio" name="q1" value= "c">c.Eleganta<br>
+                    <input type = "radio" name="q1" value= "d">d.Culoarea<br>
+
+                </div>
+                <div class = "questions">
+                    <h1 id = "question2">Primul lucru pe care l-ai intreba pe un vazantor de masini este: </h1>
+                    <input type = "radio" name="q2" value= "a">a.Ce putere are motorul? <br>
+                    <input type = "radio" name="q2" value= "b">b.Cate locuri are? <br>
+                    <input type = "radio" name="q2" value= "c">c.Ce pret are? <br>
+                    <input type = "radio" name="q2" value= "d">d.Nu am o intrebare, prezinta-mi masina! <br>
+
+                </div>
+                <div class = "questions">
+                    <h1 id = "question3">Ce faci prima data cand iti conduci noua ta masina? </h1>
+                    <input type = "radio" name="q3" value= "a">a.Testez viteza maxima<br>
+                    <input type = "radio" name="q3" value= "b">b.Cobor din masina sa mai vad o data cum arata<br>
+                    <input type = "radio" name="q3" value= "c">c.Doar ma bucur de modul cum ruleaza, nu neapart din pozitia soferului<br>
+                    <input type = "radio" name="q3" value= "d">d.Ma gandesc ca poate azi nu este o zi buna de condus si o voi conduce maine<br>
+
+                </div>
+                <div class = "questions">
+                    <h1 id = "question4">La ce interval de timp iti vei schimba masina?</h1>
+                    <input type = "radio" name="q4" value= "a">a.Maxim 2 ani<br>
+                    <input type = "radio" name="q4" value= "b">b.Pana ma plictisesc de ea<br>
+                    <input type = "radio" name="q4" value= "c">c.Pana apare un model mai bun<br>
+                    <input type = "radio" name="q4" value= "d">d.Pana se strica complet<br>
+
+                </div>
+                <div class = "questions">
+                    <h1 id = "question5">Cat de des vei verifica masina intr-un service?</h1>
+                    <input type = "radio" name="q5" value= "a">a.Nu am nevoie de un service, o voi face acasa cat de des pot<br>
+                    <input type = "radio" name="q5" value= "b">b.Oricand este nevoie<br>
+                    <input type = "radio" name="q5" value= "c">c.Voi avea angajati care sa se ocupe de asta<br>
+                    <input type = "radio" name="q5" value= "d">d.O masina se poate strica?<br>
+
+                </div> 
+                <button type="submit" >Submit Quiz</button>
+            </form>
+        </div>
+
+    </body>
+</html>
